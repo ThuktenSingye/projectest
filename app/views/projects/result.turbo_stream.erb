@@ -1,0 +1,4 @@
+<%# app/views/habits/result.turbo_stream.erb %>
+<%= turbo_stream.replace "vote-btn-#{project.id}" do %>
+  <%= render 'projects/vote_button', project: project %>
+<% end %>

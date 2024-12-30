@@ -1,0 +1,4 @@
+<%# app/views/projects/_vote_button.html.erb %>
+<div id="vote-btn-<%= project.id %>">
+  <%= button_to "Vote #{project.vote}", project_votes_path(project), class: "btn-primary bg-blue-500 hover:bg-blue-600", method: :post %>
+</div>
